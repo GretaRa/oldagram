@@ -1,9 +1,33 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img src="images/logo.png">
+        <header>
+            <img class="logo" src="images/logo.png" alt="Oldagram logo">
+            <a href="#"><img class="user-avatar" src="images/user-avatar.png" alt="Profile picture user"></a>
+        </header>
+        <main>
+            <section class="post">
+                <div class="profile-header">
+                    <img class="user-avatar" src="images/avatar-vangogh.jpg" alt="Profile picture Vincent van Gogh">
+                    <h1>Vincent van Gogh</h1>
+                    <p>Zudert, Netherlands</p>
+                </div>
+                <img class="post-image" src="images/post-vangogh.jpg" alt="Posted picture by Vincent van Gogh">
+                <div class="post-actions">
+                    <img class="icon" src="images/icon-heart.png" alt="Heart icon">
+                    <img class="icon" src="images/icon-comment.png" alt="Comment icon">
+                    <img class="icon" src="images/icon-dm.png" alt="Direct message icon">
+                </div>
+                <p class="likes">21,492 likes</p>
+                <h2>vincey1853</h2>
+                <span>Just took a few mushrooms lol</span>
+            </section>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
