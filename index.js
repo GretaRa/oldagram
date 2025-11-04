@@ -28,3 +28,34 @@ const posts = [
     }
 ]
 
+const mainEl = document.getElementById("main")
+
+function renderPost (arr){
+    arr.map((post) => {
+        mainEl.innerHTML +=
+        `<section class="post">
+                <div class="post-header">
+                    <img class="avatar" id="profile-picture" src=${post.avatar} alt="${post.name} profile picture">
+                    <div class="user-info">
+                        <h1>${post.name}</h1>
+                        <span>${post.location}</span>
+                    </div>
+                </div>
+                <img class="post-image" src=${post.post} alt="Post by ${post.name}">
+                <div class="post-footer">
+                    <div class="post-actions">
+                    <button id="like-${post.key}" aria-label="Like"><i class="fa-regular fa-heart fa-2xl"></i></button>
+                    <button aria-label="Comment"><i class="fa-regular fa-comment fa-2xl"></i></button>
+                    <button aria-label="Share post"><i class="fa-regular fa-paper-plane fa-2xl"></i></button>
+                    </div>
+                    <h3 class="likes" id="likesAmount-${post.key}">${post.likes} likes</h3>
+                    <div class="caption">
+                        <h3 class="username">${post.username}</h3>
+                        <span>${post.comment}</span>
+                    </div>
+                </div>
+            </section>`
+    })
+}
+
+renderPost(posts)

@@ -32,7 +32,7 @@ header{
     height: 100px;
 }
 
-.user-avatar{
+.avatar{
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -41,8 +41,10 @@ header{
 main{
     background-color: #EDEDED;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    gap: 20px;
 }
 
 .post{
@@ -103,7 +105,6 @@ main{
 .caption{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     gap: 5px;
     padding-top: 5px;
 }
