@@ -77,7 +77,7 @@ main{
 
 .post-footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .post-actions button{
@@ -85,6 +85,10 @@ main{
     background-color: #ffffff;
     cursor: pointer;
     padding: 15px;
+}
+
+.post-actions button:first-child{
+    padding-left: 0;
 }
 
 .post-actions button:hover,
